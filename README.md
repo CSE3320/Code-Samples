@@ -1,5 +1,6 @@
-# Code-Samples
 # Code samples from CSE 3320
+The following programs are provided to demonstrate concepts covered in CSE 3320.
+
 ## Process related programs
 - [fork.c][01] 		Demonstrates a simple forking of a child process
 - [waitpid.c][02]	Demonstrates how to wait on a specific child process and also determine why the child process died
