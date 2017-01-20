@@ -1,5 +1,5 @@
 # Code-Samples
-Code samples from CSE 3320
+## Code samples from CSE 3320
 
 - [fork.c][01] 		Demonstrates a simple forking of a child process
 - [waitpid.c][02]	Demonstrates how to wait on a specific child process and also determine why the child process died
