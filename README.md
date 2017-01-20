@@ -13,3 +13,4 @@ Code samples from CSE 3320
 [03]:https://github.com/CSE3320/Code-Samples/blob/master/exec.c 
 [04]:https://github.com/CSE3320/Code-Samples/blob/master/endien.c 
 [05]:https://github.com/CSE3320/Code-Samples/blob/master/pipe.c 
+[06]:https://github.com/CSE3320/Code-Samples/blob/master/pipe_redirect.c 
