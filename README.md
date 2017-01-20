@@ -14,6 +14,7 @@ The following programs are provided to demonstrate concepts covered in CSE 3320.
 - [sigint.c][07]	Registering a signal handler, with signal(), to catch a ctrl-c (SIGINT)
 - [sigint_sigaction_block.c][08]	Registering a signal handler, with sigaction(), to catch a ctrl-c (SIGINT). Also demonstrates masking (blocking) signals
 - [sigint_signal_block.c][09]	Registering a signal handler, with signal(), to catch a ctrl-c (SIGINT). Also demonstrates masking (blocking) signals
+- [sigqueue_example.c][10]	Send a signal to a process using sigqueue()
 
 ## Unrelated related programs
 - [endien.c][04] 	Determine if your machine is big endien or little endien 
@@ -27,3 +28,4 @@ The following programs are provided to demonstrate concepts covered in CSE 3320.
 [07]:https://github.com/CSE3320/Code-Samples/blob/master/sigint.c 
 [08]:https://github.com/CSE3320/Code-Samples/blob/master/sigint_sigaction_block.c 
 [09]:https://github.com/CSE3320/Code-Samples/blob/master/sigint_signal_block.c 
+[10]:https://github.com/CSE3320/Code-Samples/blob/master/sigqueue_example.c 
