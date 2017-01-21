@@ -5,16 +5,19 @@ The following programs are provided to demonstrate concepts covered in CSE 3320.
 - [fork.c][01] 		Demonstrates a simple forking of a child process
 - [waitpid.c][02]	Demonstrates how to wait on a specific child process and also determine why the child process died
 - [exec.c][03]		Fork a child and then call exec to turn the child into an ls process
+- [thread.c][11]	Spawn a thread	
 
 ## Inter-process communication related programs
 - [pipe.c][05]	Open a pipe between two processes and write a string from one to the other
 - [pipe_redirect.c][06]	Open a pipe between two processes and redirect stdin and stdout 
+- [shared_mem.c][13]	Setup a shared memory segment and read or write using it 
 
 ## Signal handling programs
 - [sigint.c][07]	Registering a signal handler, with signal(), to catch a ctrl-c (SIGINT)
 - [sigint_sigaction_block.c][08]	Registering a signal handler, with sigaction(), to catch a ctrl-c (SIGINT). Also demonstrates masking (blocking) signals
 - [sigint_signal_block.c][09]	Registering a signal handler, with signal(), to catch a ctrl-c (SIGINT). Also demonstrates masking (blocking) signals
 - [sigqueue_example.c][10]	Send a signal to a process using sigqueue()
+- [alarm.c][12]		Set a signal handler for SIGALRM
 
 ## Unrelated related programs
 - [endien.c][04] 	Determine if your machine is big endien or little endien 
@@ -29,3 +32,6 @@ The following programs are provided to demonstrate concepts covered in CSE 3320.
 [08]:https://github.com/CSE3320/Code-Samples/blob/master/sigint_sigaction_block.c 
 [09]:https://github.com/CSE3320/Code-Samples/blob/master/sigint_signal_block.c 
 [10]:https://github.com/CSE3320/Code-Samples/blob/master/sigqueue_example.c 
+[11]:https://github.com/CSE3320/Code-Samples/blob/master/thread.c
+[12]:https://github.com/CSE3320/Code-Samples/blob/master/alarm.c
+[13]:https://github.com/CSE3320/Code-Samples/blob/master/shared_mem.c
