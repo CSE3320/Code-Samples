@@ -21,7 +21,8 @@ int main()
     x = 5 ;
     if ( x == 5 ) 
     {
-      assert( x == 5 ) ; 
+      y = x * 2 ;
+      assert( y == 10 ) ; 
     }
     usleep( rand() % 100 ) ;
   }
