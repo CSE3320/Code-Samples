@@ -11,10 +11,16 @@ int y = 0 ;
 
 int main() 
 {
-  pthread_t tid = 0 ; 
+  pthread_t tid[100] ; 
   int count = 0 ;
   srand (time(NULL)) ;
-  int retval = pthread_create(&tid, 0, &simple_thread, 0) ;
+
+  int i;
+
+  for( i = 0; i < 100; i++ )
+  {
+    pthread_create(&tid[i], 0, &simple_thread, 0) ;
+  }
 
   while ( 1 ) 
   {
