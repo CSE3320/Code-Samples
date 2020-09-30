@@ -3,9 +3,6 @@
 
 static void * simple_thread(void *) ;
 
-pthread_mutex_t mutex1 = PTHREAD_MUTEX_INITIALIZER ; 
-pthread_mutex_t mutex2 = PTHREAD_MUTEX_INITIALIZER ; 
-
 int x = 5 ;
 int y = 0 ;
 
