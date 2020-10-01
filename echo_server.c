@@ -3,11 +3,12 @@
 #include <netdb.h>
 #include <stdio.h>
 #include<string.h>
+#define max 100
  
 int main()
 {
  
-    char str[100];
+    char str[max];
     int listen_fd, comm_fd;
  
     struct sockaddr_in servaddr;
@@ -28,9 +29,9 @@ int main()
 
     while(1)
     {
-        bzero( str, 100);
+        bzero( str, max);
  
-        int bytes = read(comm_fd,str,100);
+        int bytes = read(comm_fd,str,max);
 
         printf("Read %d bytes\n", bytes ); 
         printf("Echoing back - %s",str);
