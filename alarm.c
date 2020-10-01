@@ -25,6 +25,8 @@
 #include <signal.h>
 #include <string.h>
 
+#define ONE_SECOND 1
+
 // Purpose: Set a handler for SIGALRM 
 
 static void handle_alarm (int sig )
@@ -55,7 +57,7 @@ int main (int argc, char *argv[])
     return 1;
   }
  
-  alarm(1);
+  alarm( ONE_SECOND );
  
   while (1)
     sleep (10);
