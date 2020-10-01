@@ -3,32 +3,36 @@
 #include <netdb.h>
 #include <stdio.h>
 #include<string.h>
+
+#define MAX_BUFFER 100
+#define PORT 22000
+#define IP_ADDRESS "127.0.0.1"
  
 int main(int argc,char **argv)
 {
     int sockfd,n;
-    char sendline[100];
-    char recvline[100];
+    char sendline[MAX_BUFFER];
+    char recvline[MAX_BUFFER];
     struct sockaddr_in servaddr;
  
     sockfd=socket(AF_INET,SOCK_STREAM,0);
     bzero(&servaddr,sizeof servaddr);
  
     servaddr.sin_family=AF_INET;
-    servaddr.sin_port=htons(22000);
+    servaddr.sin_port=htons(PORT);
  
-    inet_pton(AF_INET,"127.0.0.1",&(servaddr.sin_addr));
+    inet_pton(AF_INET, IP_ADDRESS, &(servaddr.sin_addr));
  
     connect(sockfd,(struct sockaddr *)&servaddr,sizeof(servaddr));
  
     while(1)
     {
-        bzero( sendline, 100);
-        bzero( recvline, 100);
-        fgets(sendline,100,stdin); /*stdin = 0 , for standard input */
+        bzero( sendline, MAX_BUFFER);
+        bzero( recvline, MAX_BUFFER);
+        fgets(sendline,MAX_BUFFER,stdin); /*stdin = 0 , for standard input */
  
         write(sockfd,sendline,strlen(sendline)+1);
-        read(sockfd,recvline,100);
+        read(sockfd,recvline,MAX_BUFFER);
         printf("%s",recvline);
     }
  
