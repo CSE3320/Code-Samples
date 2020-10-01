@@ -1,6 +1,8 @@
 #include <pthread.h>
 #include <assert.h>
 
+#define NUM_THREADS 100
+
 static void * simple_thread(void *) ;
 
 int x = 5 ;
@@ -8,13 +10,13 @@ int y = 0 ;
 
 int main() 
 {
-  pthread_t tid[100] ; 
+  pthread_t tid[ NUM_THREADS ] ; 
   int count = 0 ;
   srand (time(NULL)) ;
 
   int i;
 
-  for( i = 0; i < 100; i++ )
+  for( i = 0; i <  NUM_THREADS ; i++ )
   {
     pthread_create(&tid[i], 0, &simple_thread, 0) ;
   }
