@@ -29,10 +29,12 @@
 #include <assert.h>
 #include <pthread.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <semaphore.h>
+#include <unistd.h>
 
 #define INITIAL_CUSTOMERS 1
-#define NUM_CASHIERS 15
+#define NUM_CASHIERS 16
 #define NONSHARED 1
 
 sem_t customer_checked_out, customers_in_line;    

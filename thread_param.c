@@ -34,7 +34,7 @@
   Small function for our threads to run.  Does nothing.
 */
 
-typedef struct ParamStruct
+struct ParamStruct
 {
   int x;  
   int y;

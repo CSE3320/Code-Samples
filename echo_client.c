@@ -2,7 +2,9 @@
 #include <sys/socket.h>
 #include <netdb.h>
 #include <stdio.h>
-#include<string.h>
+#include <string.h>
+#include <unistd.h>
+#include <arpa/inet.h>
 
 #define MAX_BUFFER 100
 #define PORT 22000
