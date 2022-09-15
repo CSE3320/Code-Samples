@@ -25,7 +25,7 @@
 
 /*
   Determine if the machine the program is running on is little-endien
-  or bieg-endien
+  or big-endien
 */
 
 union endien_union {
